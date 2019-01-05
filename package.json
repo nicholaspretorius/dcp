@@ -2,6 +2,10 @@
   "name": "ncp-daily-coding-problems",
   "version": "0.0.1",
   "description": "My solutions to the Daily Coding Problems Email Newsletter. ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicholaspretorius/dcp.git"
+  },
   "main": "dcp-01.js",
   "scripts": {
     "start": "nodemon dcp-01.js",

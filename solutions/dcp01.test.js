@@ -1,4 +1,4 @@
-const twoAddUp = require("./dcp-01");
+const twoAddUp = require("./dcp01");
 
 const list = [1, 2];
 let k;
