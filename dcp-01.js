@@ -22,8 +22,10 @@ function twoAddUp(numbers, k) {
   return false;
 }
 
-const list = [32, 10, 15, 3, 7];
-const k = 39;
+module.exports = twoAddUp;
 
-const result = twoAddUp(list, k);
-console.log("Result: ", result);
+// const list = [32, 10, 15, 3, 7];
+// const k = 39;
+
+// const result = twoAddUp(list, k);
+// console.log("Result: ", result);

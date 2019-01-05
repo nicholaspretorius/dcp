@@ -4,9 +4,9 @@
   "description": "My solutions to the Daily Coding Problems Email Newsletter. ",
   "main": "dcp-01.js",
   "scripts": {
-    "start": "node dcp-01.js",
+    "start": "nodemon dcp-01.js",
     "start:dev": "nodemon dcp-01.js",
-    "test": "test"
+    "test": "jest"
   },
   "keywords": [
     "javascript",
