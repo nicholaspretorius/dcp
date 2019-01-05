@@ -4,6 +4,8 @@
   "description": "My solutions to the Daily Coding Problems Email Newsletter. ",
   "main": "dcp-01.js",
   "scripts": {
+    "start": "node dcp-01.js",
+    "start:dev": "nodemon dcp-01.js",
     "test": "test"
   },
   "keywords": [
@@ -11,5 +13,11 @@
     "coding-problems"
   ],
   "author": "Nicholas Pretorius",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }

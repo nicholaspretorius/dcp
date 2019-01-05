@@ -8,7 +8,6 @@
 function twoAddUp(numbers, k) {
   for (let i = 0; i < numbers.length; i++) {
     let base = numbers[i]; // control base number
-    console.log("Base: ", base);
     // for each number, add it to the next to see if it matches k. If not, move
     for (var j = 0; j < numbers.length; j++) {
       if (base !== numbers[j]) {
