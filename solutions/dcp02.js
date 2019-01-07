@@ -4,6 +4,7 @@
 // Exampe: Given array [1,2,3,4,5] the output would be [120, 60 40, 30, 24]
 // Example: given array [3,2,1] the output would be [2,3,6]
 
+// First attempt 06/01/2019
 function multiply(current, numbers) {
   let total = 1;
   for (let j = 0; j < numbers.length; j++) {
@@ -14,16 +15,35 @@ function multiply(current, numbers) {
   return total;
 }
 
+// Second attempt 07/01/2019
+function multiplyReduce(current, numbers) {
+  return numbers
+    .filter(number => number !== current)
+    .reduce((a, b) => {
+      return a * b;
+    });
+}
+
+// First attempt 06/01/2019
 function products(numbers) {
   const output = [];
   for (let i = 0; i < numbers.length; i++) {
     output.push(multiply(i, numbers));
+    //output.push(multiplyReduce(numbers[i], numbers));
   }
   return output;
 }
 
-// const numbers = [1, 2, 3, 4, 5];
+// Second attempt 07/01/2019
+function productsMap(numbers) {
+  return numbers.map(number => multiplyReduce(number, numbers));
+}
 
-// console.log(products(numbers));
+//const numbers = [3, 2, 1];
+//const numbers = [1, 2, 3, 4, 5];
+//const numbers = [5, 6, 7];
 
-module.exports = products;
+//console.log(products(numbers));
+//console.log(productsMap(numbers));
+
+module.exports = productsMap;
