@@ -15,15 +15,6 @@ function multiply(current, numbers) {
   return total;
 }
 
-// Second attempt 07/01/2019
-function multiplyReduce(current, numbers) {
-  return numbers
-    .filter(number => number !== current)
-    .reduce((a, b) => {
-      return a * b;
-    });
-}
-
 // First attempt 06/01/2019
 function products(numbers) {
   const output = [];
@@ -32,6 +23,15 @@ function products(numbers) {
     //output.push(multiplyReduce(numbers[i], numbers));
   }
   return output;
+}
+
+// Second attempt 07/01/2019
+function multiplyReduce(current, numbers) {
+  return numbers
+    .filter(number => number !== current)
+    .reduce((a, b) => {
+      return a * b;
+    });
 }
 
 // Second attempt 07/01/2019
