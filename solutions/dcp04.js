@@ -1,7 +1,7 @@
 // Problem: Given an array of integers, find the first (lowest) missing positive integer in the array.
 // Example: [3,4,-1,1] should give you 2.
 // Example: [1,2,0] should give 3.
-// Start: 19:02 End:
+// Start: 19:02 End: 19:40
 
 function sortNumbers(a, b) {
   if (a > b) {
