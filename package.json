@@ -8,7 +8,7 @@
   },
   "main": "./solutions/dcp-01.js",
   "scripts": {
-    "start": "nodemon ./solutions/dcp04.js",
+    "start": "nodemon ./solutions/dcp05.js",
     "start:dev": "nodemon dcp-01.js",
     "test": "jest",
     "test:dev": "jest --watch"
